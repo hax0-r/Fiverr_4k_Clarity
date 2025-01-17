@@ -31,3 +31,25 @@ Array.from(closeManageConsent).forEach(button => {
         openManageConsent.classList.remove("hidden");
     });
 });
+
+const telegram = document.getElementById("telegram")
+const whatsapp = document.getElementById("whatsapp")
+const message = document.getElementById("message")
+const messagei = document.getElementById("messagei")
+
+let isToggled = false;
+
+message.addEventListener("click", () => {
+    if (isToggled) {
+        whatsapp.style.bottom = "0";
+        telegram.style.bottom = "0";
+        messagei.classList.remove("fa-x")
+        messagei.classList.add("fa-comment-dots")
+    } else {
+        whatsapp.style.bottom = "4rem";
+        telegram.style.bottom = "8rem";
+        messagei.classList.add("fa-x")
+        messagei.classList.remove("fa-comment-dots")
+    }
+    isToggled = !isToggled;
+});

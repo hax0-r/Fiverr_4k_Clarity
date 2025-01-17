@@ -8,11 +8,17 @@ requestAnimationFrame(raf);
 const responsiveNavbar = document.getElementById("responsiveNavbar")
 const closeNav = document.getElementById("closeNav")
 const openNav = document.getElementById("openNav")
+const closeNavPricing = document.getElementById("closeNavPricing")
 
 openNav.addEventListener('click', () => {
     responsiveNavbar.style.width = "100%"
 })
+
 closeNav.addEventListener('click', () => {
+    responsiveNavbar.style.width = "0%"
+})
+
+closeNavPricing.addEventListener('click', () => {
     responsiveNavbar.style.width = "0%"
 })
 

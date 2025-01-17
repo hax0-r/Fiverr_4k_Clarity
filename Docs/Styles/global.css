@@ -23,6 +23,7 @@ a {
 
 .slidein {
     animation: slideAnimation 1s ease var(--slidein-delay, 0) forwards;
+    /* slidein [--slidein-delay:300ms] opacity-0 */
 }
 
 @keyframes slideAnimation {

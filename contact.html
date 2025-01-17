@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4k Clarity</title>
+    <link rel="shortcut icon" href="/Docs/Assets/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="bg min-h-screen">
+
+        <!-- Navbar -->
+        <div class="border-b border-zinc-500">
+            <nav class="flex items-center justify-between max-w-7xl w-full p-5 mx-auto">
+                <a href="./index.html">
+                    <img src="./Docs/Assets/logo.webp" class="md:h-12 h-8" alt="">
+                </a>
+                <ul class="md:flex hidden items-center gap-8 text-white font-medium tracking-wide">
+                    <li><a href="./index.html" class="navUnderLine  "> Home</a></li>
+                    <li><a href="#pricing" class="navUnderLine "> Pricing</a></li>
+                    <li><a href="./privacy-and-refund-policy.html" class="navUnderLine  "> Privacy & Refund
+                            Policy</a>
+                    </li>
+                    <li><a href="./contact.html" class="navUnderLineActive  "> Contact Us</a></li>
+                </ul>
+                <i class="fa-solid fa-bars text-[#ffa500] md:hidden text-2xl cursor-pointer" id="openNav"></i>
+            </nav>
+        </div>
+        <!-- responsive Navbar -->
+
+        <div class="w-0 overflow-hidden bg-white fixed right-0 z-50 top-0 h-screen transition-all duration-500"
+            id="responsiveNavbar">
+            <i class="fa-solid fa-x flex justify-end p-5 cursor-pointer text-zinc-700" id="closeNav"></i>
+            <ul class="flex flex-col  font-medium tracking-wide">
+                <li><a href="./index.html"
+                        class="text-nowrap block transition-all duration-500 hover:bg-[#f0f5fa] p-5 "> Home</a></li>
+                <li><a href="#pricing" class="text-nowrap block transition-all duration-500 hover:bg-[#f0f5fa] p-5">
+                        Pricing</a>
+                </li>
+                <li><a href="./privacy-and-refund-policy.html"
+                        class="text-nowrap block transition-all duration-500 hover:bg-[#f0f5fa] p-5">
+                        Privacy &
+                        Refund Policy</a></li>
+                <li><a href="./contact.html" class="text-nowrap block p-5 bg-[#f0f5fa] text-blue-600">
+                        Contact
+                        Us</a></li>
+            </ul>
+        </div>
+
+
+        <div class="max-w-7xl text-white w-full mx-auto p-5 md:pt-16 pt-10">
+            <h2 class="text-center font-semibold md:text-5xl text-3xl !leading-snug">Reach Out Anytime –We Here to Help!
+            </h2>
+
+            <div class="flex pb-7 items-center gap-14 justify-between md:flex-row flex-col mx-auto w-full md:pt-28 pt-10">
+                <div class="md:max-w-[50%] w-full">
+                    <div class=" border-y border-zinc-500">
+                        <a href="https://api.whatsapp.com/send/?phone=33756757588&text&type=phone_number&app_absent=0"
+                            class="flex items-center md:flex-row flex-col md:justify-start justify-center md:text-start text-center gap-2 md:py-10 py-5 border-b border-blue-500">
+                            <i class="fa-brands text-[#ffa500] md:text-5xl text-4xl fa-whatsapp"></i>
+                            <div class="">
+                                <h2 class="text-[#ffa500] text-xl font-semibold">WHATSAPP</h2>
+                                <h2 class=" text-lg font-semibold">Click here to Chat</h2>
+                            </div>
+                        </a>
+                        <a href="http://t.me/Team4KClarity" target="_blank"
+                            class="flex items-center md:flex-row flex-col md:justify-start justify-center md:text-start text-center gap-2 md:py-10 py-5 border-b border-blue-500">
+                            <i class=" text-[#ffa500] md:text-5xl text-4xl fa-brands fa-telegram"></i>
+                            <div class="">
+                                <h2 class="text-[#ffa500] text-xl font-semibold">TELEGRAM</h2>
+                                <h2 class=" text-lg font-semibold">@Team4KClarityShop</h2>
+                            </div>
+                        </a>
+                        <a href="mailto:Infos@4kclarityprime.com" class="flex items-center md:flex-row flex-col md:justify-start justify-center md:text-start text-center gap-2 md:py-10 py-5">
+                            <i class=" text-[#ffa500] md:text-5xl text-4xl fa-regular fa-envelope"></i>
+                            <div class="">
+                                <h2 class="text-[#ffa500] text-xl font-semibold">
+                                    EMAIL</h2>
+                                <h2 class=" text-lg font-semibold">Infos@4kclarityprime.com</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="text-zinc-300 pt-5 md:block hidden text-xs">For any questions or concerns, don’t hesitate to contact us.
+                        Our dedicated team is here to
+                        provide support and resolve any issues you might have. We’re committed to ensuring you have the
+                        best experience possible, so feel free to reach out anytime! </p>
+                </div>
+                <div class="md:max-w-[50%] w-full">
+                    <h2 class="text-white md:text-start text-center font-semibold md:text-4xl text-3xl">Send Us a Message</h2>
+                    <!--  -->
+                    <form action="https://api.web3forms.com/submit" method="POST" class="md:pt-10 pt-7">
+                        <input type="hidden" name="access_key" value="9e809dad-32e7-4345-9bcc-a19b86068f55">
+                        <label for="name">First Name <span class="text-red-500">*</span> </label>
+                        <input type="text" required class="bg-[#e6e6e6] mb-7 text-black w-full p-3 rounded-md block mt-2"
+                            name="name" id="name" placeholder="E.g. John">
+                        <label for="email">Email Address <span class="text-red-500">*</span> </label>
+                        <input type="email" placeholder="E.g. john@deo.com" required
+                            class="bg-[#e6e6e6] text-black w-full p-3 rounded-md block mt-2 mb-7" name="email"
+                            id="email">
+                        <label for="messaage">Messaage </label>
+                        <textarea name="messaage" id="messaage" rows="8"
+                            class="w-full text-black resize-none rounded-md bg-[#e6e6e6] p-3 mt-2"
+                            placeholder="Enter your message..."></textarea>
+                        <button type="submit" class="bg-[#17a8e3] md:w-auto w-full px-8 py-3 mt-5 rounded-md font-medium transition-all duration-500 hover:bg-[#178ee3]">Send Message</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- componets -->
+
+    <div
+        class="md:block hidden fixed fadeIn -bottom-8 z-20 cursor-pointer transition-all duration-500 hover:bottom-0 right-5">
+        <p id="openManageConsent" class="border rounded-t-lg bg-white px-5 py-3 fadeIn">
+            Manage Consent
+        </p>
+    </div>
+
+    <div id="ManageConsent"
+        class="bg-white p-4 border rounded-lg fixed bottom-4 hidden fadeIn z-30 right-4 max-w-[30rem] w-full">
+        <div class="flex items-center justify-between">
+            <p></p>
+            <p class="font-medium">Manage Consent</p>
+            <i class="fa-solid closeManageConsent fa-x flex justify-end cursor-pointer text-sm text-zinc-700"></i>
+        </div>
+        <p class="text-xs text-zinc-700 py-5">To provide the best experiences, we use technologies like cookies to store
+            and/or access device information.
+            Consenting to these technologies will allow us to process data such as browsing behavior or unique IDs on
+            this site. Not consenting or withdrawing consent, may adversely affect certain features and functions.
+        </p>
+        <button
+            class="w-full p-3 closeManageConsent rounded-lg bg-blue-600 text-white transition-all duration-500 hover:bg-blue-500">Accept</button>
+    </div>
+
+    <div class="fixed bottom-8 right-6">
+
+        <i
+            class="fa-regular bg-[#ff6060] cursor-pointer text-white text-2xl py-3 px-4 rounded-full fa-comment-dots"></i>
+
+    </div>
+
+    <!-- componets -->
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+</body>
+
+</html>

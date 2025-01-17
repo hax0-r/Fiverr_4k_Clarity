@@ -36,6 +36,7 @@ const telegram = document.getElementById("telegram")
 const whatsapp = document.getElementById("whatsapp")
 const message = document.getElementById("message")
 const messagei = document.getElementById("messagei")
+const needHelp = document.getElementById("needHelp")
 
 let isToggled = false;
 
@@ -45,11 +46,13 @@ message.addEventListener("click", () => {
         telegram.style.bottom = "0";
         messagei.classList.remove("fa-x")
         messagei.classList.add("fa-comment-dots")
+        needHelp.innerText = "Need Help"
     } else {
         whatsapp.style.bottom = "4rem";
         telegram.style.bottom = "8rem";
         messagei.classList.add("fa-x")
         messagei.classList.remove("fa-comment-dots")
+        needHelp.innerText = "Hide"
     }
     isToggled = !isToggled;
 });

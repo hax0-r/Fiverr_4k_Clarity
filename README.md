@@ -12,7 +12,3 @@ Welcome to the 4K Clarity Prime project!
 - Minimal buffering
 - User-friendly interface
 - Cross-platform support
-
-## Hosting
-
-This project is licensed under the MIT License. See the [https://4k-clarity.netlify.app](4k Clarity) file for more information.
